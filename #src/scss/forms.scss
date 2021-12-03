@@ -27,11 +27,11 @@
 	padding: 10px 25px;
 	// min-width: 144px;
 	// min-height: 36px;
-	font-size: 12px;
+	font-size: 22px;
 	font-weight: 400;
-	color: #000;
-	background: #FFE417;
-	border-radius: 5px;
+	color: #fff;
+	background: #D98600;
+  border-radius: 20px;
 	&:hover{}
 	&.fw{width: 100%;}  
 }
@@ -58,10 +58,12 @@
 .search__input {
  font-size: 12px;
  font-weight: 300;
- color: #464749;
- padding-left: 14px;
- border: 1px solid #e0e1e3 !important;
- border-radius: 5px !important;
+//  color: #464749;
+ padding-left: 22px;
+//  border: 1px solid #e0e1e3 !important;
+ border-radius: 20px !important;
+ background: #ccc;
+ opacity: 0.4;
 }
 .search__btn {
  background-color: transparent;
@@ -189,10 +191,11 @@ textarea {
 .input {
 	display: flex;
 	width: 100%;
-	height: 30px;
-	padding: 0px 15px;
-	border-radius: 5px;
-	border: 1px solid #000;
+	height: 40px;
+	padding: 0px 16px;
+  background: #fff;
+	border-radius: 20px;
+	// border: 1px solid #000;
 	&._focus {
 		background: grey;
 	}
