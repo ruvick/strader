@@ -62,7 +62,7 @@ if (sliderScrollItems.length > 0) {
 function sliders_bild_callback(params) { }
 
 // Сюда пишем класс нашего слайдера и меняем переменную
-let slider = new Swiper('.slider', {
+let sl_Index = new Swiper('.sl-index', {
 	// effect: 'fade',
 	autoplay: {
 		delay: 3000,
@@ -81,14 +81,14 @@ let slider = new Swiper('.slider', {
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	//pagination: {
-	//	el: '.slider-quality__pagging',
-	//	clickable: true,
-	//},
+	pagination: {
+		el: '.slider-quality__pagging',
+		clickable: true,
+	},
 	// Arrows
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.sl-index-button-next',
+		prevEl: '.sl-index-button-prev',
 	},
 	/*
 	breakpoints: {
