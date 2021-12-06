@@ -1,79 +1,111 @@
 <header id="header" class="header">
-	<div class="header__container _container">
 
-		<div class="header__row d-flex">
+  <div class="header__top">
+    <div class="header__top-container _container">
+      <div class="header__top-column">
+        <ul class="header__top-list">
+          <li class="header__top-list-item"><a href="#" class="header__top-list-item-link">Как сделать заказ</a></li>
+          <li class="header__top-list-item"><a href="#" class="header__top-list-item-link">Доставка</a></li>
+          <li class="header__top-list-item"><a href="#" class="header__top-list-item-link">Оплата</a></li>
+          <li class="header__top-list-item"><a href="#" class="header__top-list-item-link">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="header__top-column">
+        <a href="mailto:strader-art@gmail.com" class="header__top-email">strader-art@gmail.com</a>
+        <a href="tel:88004882222" class="header__top-phone">8 800 488 22 22</a>
+        <a href="#callback" class="header__top-popup _popup-link">Заказать звонок</a>  
+      </div>
+    </div>
+  </div>
 
-			<a href="index.html" class="logo-icon header__logo">
-				<!-- <? bloginfo("url"); ?> -->
-				<p class="logo-icon__text">Название <span>текст logo</span></p>
-			</a>
+  <div class="header__center">
+    <div class="header__center-container _container">
+      <a href="index.html" class="logo-icon header__logo">
+        <!-- <? bloginfo("url"); ?> -->
+      </a>
+      <div class="header__center-address">
+        <p class="header__center-address-text">Ваш город</p>
+        <select name="form[]" id="" class="header__center-address-select catalog-header__select">
+          <option value="1">г. Москва</option>
+          <option value="2" option="">г. Москва</option>
+          <option value="3" option="">г. Москва</option>
+          <option value="3" option="">г. Москва</option>
+        </select>
+      </div>
+      <div class="search header__search">
+        <h5 class="header__search-title">Интернет магазин струнных инструментов и аксессуаров</h5>
+        <form class="header__search-form" role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform"
+          class="search__form">
+          <input type="text" placeholder="Поиск" class="search__input input"
+          value="<?php echo get_search_query() ?>" name="s" id="s">
+          <button type="submit" tabindex="2" value="" id="searchsubmit" class="header__search-btn search__btn"></button>
+        </form>
+      </div>
+      <button class="mob-search-btn header__mob-search-btn"></button>
+      <div class="header__center-icons-block">
+        <div class="header__center-icons">
+          <a href="#" class="header__center-icons-item icons-item-01">
+            <span class="icons-item-number icons-item-number-favorites">0</span>
+            <p class="header__center-icons-name">Избранное</p>
+          </a>
+        </div>
+        <div class="header__center-icons">
+          <a href="#" class="header__center-icons-item icons-item-02">
+            <p class="header__center-icons-name">Профиль</p>
+          </a>
+        </div>
+        <div class="header__center-icons">
+          <a href="#" class="header__center-icons-item bascket-icon icons-item-03">
+            <span class="icons-item-number bascket-icon__number bascet_counter">0</span>
+            <p class="header__center-icons-name">Корзина</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-			<div class="header__navigation">
-				<div class="header__menu-block"> 
-					<ul class="menu-list header__menu-list d-flex"> 
-						<li class="menu-list__item"><a href="#" class="menu-list__link">Пункт 1</a></li>
-						<li class="menu-list__item"><a href="#" class="menu-list__link">Пункт 2</a></li>
-						<li class="menu-list__item"><a href="#" class="menu-list__link">Пункт 3</a></li>
-						<li class="menu-list__item"><a href="#" class="menu-list__link">Пункт 4</a></li>
-						<li class="menu-list__item"><a href="#" class="menu-list__link">Пункт 5</a></li>
-					</ul>
-					<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
-						'container_class' => 'menu__list','container' => false )); ?>  -->
+  <div class="header__menu">
+    <div class="header__menu-container _container">
+      <ul class="header__menu-list menu-list d-flex">
+        <li class="menu-list__item"><a href="#" class="menu-list__link menu-list__link_cat">Каталог</a></li>
+        <li class="menu-list__item"><a href="#" class="menu-list__link">Струны</a></li>
+        <li class="menu-list__item"><a href="#" class="menu-list__link">Аксессуары</a></li>
+        <li class="menu-list__item"><a href="#" class="menu-list__link">Футляры и чехлы</a></li>
+        <li class="menu-list__item"><a href="#" class="menu-list__link">Инструменты</a></li>
+        <li class="menu-list__item"><a href="#" class="menu-list__link">Смычки</a></li>
+        <li class="menu-list__item"><a href="#" class="menu-list__link">Пульты</a></li>
+        <li class="menu-list__item"><a href="#" class="menu-list__link menu-list__link_sale">Акции %</a></li>
+      </ul>
+      <!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
+        'container_class' => 'menu__list','container' => false )); ?>  -->
+        <div class="icon-menu" aria-label="Бургер меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-						<div class="search header__search">
-							<form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">
-								<input type="text" placeholder="Поиск" class="search__input input"
-								value="<?php echo get_search_query() ?>" name="s" id="s">
-								<button type="submit" tabindex="2" value="" id="searchsubmit" class="search__btn"></button>
-							</form>
-						</div>
-					</div>
-					<button class="mob-search-btn header__mob-search-btn"></button>
+  <!-- Мобильное меню -->
+  <div class="mob-menu header__mob-menu">
+    <ul class="mob-menu__list">
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 1</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 2</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 3</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 4</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 5</a></li>
+    </ul>
+  <!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
+    'container_class' => 'mob-menu__list','container' => false )); ?>  -->
+    <a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
+  </div>
 
-					<div class="contacts header__contacts d-flex">
-						<a href="tel:84951700000" class="contacts__phone header__phone">8 (495) 170-00-00</a>
-						<!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->
-						<p class="contacts__time-phone header__time-phone">Звонить с 08:00 до 22:00</p>
-						<a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
-					</div>
-					<a href="tel:84951700000" class="mob-phone-icon header__mob-phone-icon"></a>
-					<!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-callback__phone"></a> -->
-
-					<a href="#" class="bascket-icon"><span class="bascket-icon__number bascet_counter">1</span></a>
-
-					<div class="icon-menu" aria-label="Бургер меню"> 
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-		<!-- Полоса прокрутки в шапке -->
-		<div id="scroll-progress"></div>
-	</header>
-
-	<!-- Мобильное меню -->
-	<div class="mob-menu header__mob-menu">
-		<ul class="mob-menu__list">
-			<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 1</a></li> 
-			<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 2</a></li>
-			<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 3</a></li>
-			<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 4</a></li>
-			<li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 5</a></li>
-		</ul>
-	<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
-		'container_class' => 'mob-menu__list','container' => false )); ?>  -->
-		<a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
-	</div>
-
-	<!-- Строка мобильного поиска -->
-	<div class="search header__search-mob">
-		<form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">
-			<input type="text" class="search__input input" placeholder="Поиск" value="<?php echo get_search_query() ?>" name="s"
-			id="s">
-			<button type="submit" id="searchsubmit" class="search__btn" tabindex="2" value=""></button>
-		</form>
-	</div>
+  <!-- Строка мобильного поиска -->
+  <div class="search header__search-mob">
+    <form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">
+      <input type="text" class="search__input input" placeholder="Поиск" value="<?php echo get_search_query() ?>" name="s"
+      id="s">
+      <button type="submit" id="searchsubmit" class="search__btn" tabindex="2" value=""></button>
+    </form>
+  </div>
