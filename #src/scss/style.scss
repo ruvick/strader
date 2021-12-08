@@ -375,8 +375,8 @@ h5 {
 	}
 	&__block-form-input {
 		display: inline;
-		max-width: 401px;
-		margin-right: 20px;
+		flex: 0 1 33%;
+		// margin-right: 20px;
 		&:last-child {
 			 margin:0px 0px 0px 0px;
 		}
@@ -388,15 +388,20 @@ h5 {
 }
 
 .applic__block-form .form__error {
+	flex: 0 1 100%;
    margin-top: 10px;
    margin-bottom: 0;
 }
 
 .applic__block-form .form__line {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
    margin-bottom: 44px;
 }
 .applic__block-form-btn {
 	padding: 6px 42px;
+	min-width: 263px;
 }
 //===================================================================================================================================
 
