@@ -10,6 +10,7 @@
   &__top-container {
     display: flex;
     justify-content: space-between; 
+    flex-wrap: wrap;
   }
 
   &__top-column { 
@@ -88,7 +89,7 @@
 // }
 
 .header__center {
-  padding: 16px 0 33px 0;
+  padding: 16px 0 43px 0;
 }
 
 .header__center-container {
@@ -194,6 +195,7 @@
       height: 24px;
       margin-bottom: 5px;
       background-position: 0 0;
+      background-size: 100%;
       background-repeat: no-repeat;
     }
   }
@@ -344,6 +346,7 @@
 
 .header__popup-link {
 	font-size: 12px;
+  color: #af0018;
 }
 
 // Стиль иконки бургера
@@ -361,7 +364,7 @@
  left: 0px;
  width: 100%;
  height: 2px;
- background-color: #FCA01F;
+ background-color: #af0018;
  -webkit-transition: all 0.3s ease 0s; 
  -moz-transition: all 0.3s ease 0s;
  -ms-transition: all 0.3s ease 0s;
@@ -397,18 +400,18 @@
 .mob-menu {
 	// visibility: hidden;
   position: fixed;
-  z-index: 500;
+  z-index: 5500;
   top: 0;
 	right: -100%;
   width: 50%;
   height: 100%;
-  padding: 35px 10px 0px 20px;
+  padding: 130px 10px 0px 20px;
 	// background: rgba(0, 0, 0, 0.8);
 	background: #fff;
 	box-shadow: 0px 3px 5px 0px black;
   -webkit-transition: right 0.8s;
   -o-transition: right 0.8s;
-	margin-top: 30px;
+	// margin-top: 30px;
   transition: right 0.8s; 
   overflow: auto;}
 .mob-menu li a {
@@ -423,8 +426,8 @@
 // Иконка мобильного телефона
 .mob-phone-icon {
 	display: none;
-	flex: 0 0 30px;
-	height: 30px;
+	flex: 0 0 18px;
+	height: 18px;
 	justify-content: center;
 	align-items: center;
 		&:before {
@@ -432,10 +435,10 @@
 		float: left;
 		width: 100%;
 		height: 100%;
-		background-size: 90%;
+		background-size: 100%;
 		background-position: 0% 100%;
 		background-repeat: no-repeat;
-		background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzg0IDM4NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzg0IDM4NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiNGQ0EwMUYiIGQ9Ik0zNTMuMTg4LDI1Mi4wNTJjLTIzLjUxLDAtNDYuNTk0LTMuNjc3LTY4LjQ2OS0xMC45MDZjLTEwLjcxOS0zLjY1Ni0yMy44OTYtMC4zMDItMzAuNDM4LDYuNDE3bC00My4xNzcsMzIuNTk0DQoJCQljLTUwLjA3My0yNi43MjktODAuOTE3LTU3LjU2My0xMDcuMjgxLTEwNy4yNmwzMS42MzUtNDIuMDUyYzguMjE5LTguMjA4LDExLjE2Ny0yMC4xOTgsNy42MzUtMzEuNDQ4DQoJCQljLTcuMjYtMjEuOTktMTAuOTQ4LTQ1LjA2My0xMC45NDgtNjguNTgzQzEzMi4xNDYsMTMuODIzLDExOC4zMjMsMCwxMDEuMzMzLDBIMzAuODEzQzEzLjgyMywwLDAsMTMuODIzLDAsMzAuODEzDQoJCQlDMCwyMjUuNTYzLDE1OC40MzgsMzg0LDM1My4xODgsMzg0YzE2Ljk5LDAsMzAuODEzLTEzLjgyMywzMC44MTMtMzAuODEzdi03MC4zMjNDMzg0LDI2NS44NzUsMzcwLjE3NywyNTIuMDUyLDM1My4xODgsMjUyLjA1MnoiDQoJCQkvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K');
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMy4zNzQiIGhlaWdodD0iMTMuMzgiIHZpZXdCb3g9IjAgMCAxMy4zNzQgMTMuMzgiPg0KICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzUyIiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCA1MiIgZD0iTS02MzEuNjY4LDI4LjkxN2E2LjAwNyw2LjAwNywwLDAsMS0xLjA3Mi0uMWMtNC44OS0uODc1LTEwLjM0Ny04LjAyOS01Ljk4MS0xMi4zNDguMTYzLS4xNjYuMzM1LS4zMjUuNTEzLS40NzRhMS45NSwxLjk1LDAsMCwxLDEuMzM3LS40NTcsMS45MzYsMS45MzYsMCwwLDEsMS4zLjU2OWwuMDA3LjAwNy44ODQuOTE5YTEuOTE2LDEuOTE2LDAsMCwxLS42MywzLjExMyw0LjIzNiw0LjIzNiwwLDAsMC0uNy4zNDRjLS40ODcuNS0uOCwxLjMsMS4wMjQsMy4xMjcuODI3LjgsMi4xLDIuMDEyLDMuMTIzLjk3MmE0LjEsNC4xLDAsMCwwLC4zMjMtLjY2OSwxLjksMS45LDAsMCwxLDEuMzg5LTEuMTU5LDEuOSwxLjksMCwwLDEsMS43MjYuNTE4bC45MDguODc5LjAwNi4wMDZhMS45NDEsMS45NDEsMCwwLDEsLjU2OCwxLjI5MiwxLjk0NiwxLjk0NiwwLDAsMS0uNDUxLDEuMzM3Yy0uMTM5LjE2Ny0uMjg3LjMyOS0uNDQuNDgzYTUuMzA2LDUuMzA2LDAsMCwxLTMuODMyLDEuNjRabS01LjI4Mi0xMi4zMzZhLjkxMy45MTMsMCwwLDAtLjU4Ny4yMTZjLS4xNTIuMTI3LS4zLjI2NC0uNDM5LjQwNi0zLjcyMiwzLjcyOCwxLjM0NCw5Ljg0LDUuNDIyLDEwLjU4NmE0LjI2NSw0LjI2NSwwLDAsMCwzLjk3OC0xLjI1MWMuMTMxLS4xMzIuMjU4LS4yNzEuMzc3LS40MTNhLjkuOSwwLDAsMC0uMDUxLTEuMjE5bC0uOTA3LS44NzgtLjAwNy0uMDA2YS44NDYuODQ2LDAsMCwwLS43OC0uMjM2Ljg0OS44NDksMCwwLDAtLjYyOC41MjUsNC4wMiw0LjAyLDAsMCwxLS41MzgsMWMtMS41MzksMS41NTktMy40LjMxOS00LjYxOC0uOTU3LTEuMTg4LTEuMTQtMi41NjItMy4wODUtMS4wMTEtNC42MTZhNC4xNTMsNC4xNTMsMCwwLDEsMS4wMzEtLjU2MS44NDguODQ4LDAsMCwwLC41MTctLjYyNi44NTguODU4LDAsMCwwLS4yMzYtLjc4NWwtLjAwNy0uMDA2LS44ODQtLjkxOWEuODk0Ljg5NCwwLDAsMC0uNjMyLS4yNjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NDAuMzE3IC0xNS41MzcpIiBmaWxsPSIjNjYwYjFkIi8+DQo8L3N2Zz4NCg==');
 	}
 }
 
@@ -448,18 +451,19 @@
 	display: none;
 	justify-content: center;
 	align-items: center;
-	flex: 0 0 30px;
-	width: 30px;
-	height: 30px;
-	background: #65B965;
+	flex: 0 0 23px;
+	width: 23px;
+	height: 23px;
+	background: #af0018;
 	border-radius: 50%;
 		&:before {
 			content: "";
 			float: right;
-			width: 14px;
-			height: 12px;
+			width: 12px;
+			height: 10px;
 			background-position: 0 0;
 			background-repeat: no-repeat;
+      background-size: 100%;
 			background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCI+DQogIDxpbWFnZSBpZD0ic2VhcmNoIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQTRBQUFBT0NBWUFBQUFmU0MzUkFBQUFCSE5DU1ZRSUNBZ0lmQWhraUFBQUFRUkpSRUZVS0ZPVjBqMHJobUVVQi9EZms4aEtZbFNTUk5tOVpNRElwcFF2UU9RTHlNWmtVVUl5R0pRdndHS3lHS3pLUzhrZ0gwQkdzVHc2ZFYyNnV6eFBQZTdsN3E3enU4KzUvdWVxMWV0MTZlbkJLcWJRZ1FjYzR5a1hWTisxQkNkd2lXNjg0aFBEcVhBRFJ5VU9HSjJlOFlVbDNLU2lmcHhqRXJPNExqdHVZUnZURlpScnV2Q0NPOHlWOEFwREdHaDBGcHhpR1owbGpCSDZNTm9FSHFiUTJrcTRqL1hVOGEzQVVSeXB4dm5IU2ppQ2U5eGlBUitwSU5BZUl0VVZuRFJheHhwaXBIZGNwSFZFR0hIMjZMYUxIWHhublBjWTN6UFlUQmVnSFk4NFFHOUtQZmE4bUhFVk5zbEdqSHlXa3YzRnJjRDQ0Ui9jS3F6aWVZei9CMlk4R0ZmMEJ6Z1BXaFg0TXhhYkFBQUFBRWxGVGtTdVFtQ0MiLz4NCjwvc3ZnPg0K);
 		}
 }
@@ -467,16 +471,18 @@
 // Строка мобильного поиска
 .header__search-mob {
 	position: fixed;
-	top: -5%;
-	-webkit-transition: top 0.8s;
-  -o-transition: top 0.8s;
-  transition: top 0.8s; 
+	top: -10%;
+  z-index: 5;
+  background-color: #fff;
+	-webkit-transition:  0.8s;
+  -o-transition:  0.8s;
+  transition:  0.8s; 
 }
 .header__search-mob._active {
-  top: 40px;
-	-webkit-transition: top 0.8s;
-  -o-transition: top 0.8s;
-  transition: top 0.8s; 
+  top: 38px;
+	-webkit-transition:  0.8s;
+  -o-transition:  0.8s;
+  transition:  0.8s; 
 }
 
 

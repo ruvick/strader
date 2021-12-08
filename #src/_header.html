@@ -42,6 +42,7 @@
         </form>
       </div>
       <button class="mob-search-btn header__mob-search-btn"></button>
+      <a href="tel:84951700000" class="mob-phone-icon header__mob-phone-icon"></a>
       <div class="header__center-icons-block">
         <div class="header__center-icons">
           <a href="#" class="header__center-icons-item icons-item-01">
@@ -61,6 +62,11 @@
           </a>
         </div>
       </div>
+      <div class="icon-menu" aria-label="Бургер меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </div>
 
@@ -78,11 +84,6 @@
       </ul>
       <!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
         'container_class' => 'menu__list','container' => false )); ?>  -->
-        <div class="icon-menu" aria-label="Бургер меню">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </div>
     </div>
   </header>
@@ -90,11 +91,14 @@
   <!-- Мобильное меню -->
   <div class="mob-menu header__mob-menu">
     <ul class="mob-menu__list">
-      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 1</a></li>
-      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 2</a></li>
-      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 3</a></li>
-      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 4</a></li>
-      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Пункт 5</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Каталог</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Струны</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Аксессуары</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Футляры и чехлы</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Инструменты</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Смычки</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Пульты</a></li>
+      <li class="mob-menu__item"><a href="#" class="mob-menu__link">Акции %</a></li>
     </ul>
   <!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
     'container_class' => 'mob-menu__list','container' => false )); ?>  -->
@@ -103,9 +107,10 @@
 
   <!-- Строка мобильного поиска -->
   <div class="search header__search-mob">
-    <form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">
-      <input type="text" class="search__input input" placeholder="Поиск" value="<?php echo get_search_query() ?>" name="s"
-      id="s">
-      <button type="submit" id="searchsubmit" class="search__btn" tabindex="2" value=""></button>
+    <form class="header__search-form" role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform"
+      class="search__form">
+      <input type="text" placeholder="Поиск" class="search__input input"
+      value="<?php echo get_search_query() ?>" name="s" id="s">
+      <button type="submit" tabindex="2" value="" id="searchsubmit" class="header__search-btn search__btn"></button>
     </form>
   </div>
