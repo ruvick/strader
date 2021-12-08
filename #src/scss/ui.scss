@@ -348,6 +348,30 @@ body.ie {
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4Ljg3NSIgaGVpZ2h0PSIxOS41MjEiIHZpZXdCb3g9IjAgMCA4Ljg3NSAxOS41MjEiPg0KICA8ZyBpZD0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YxfMTUiIGRhdGEtbmFtZT0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YwgMTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM4OC45MzEgLTUwMS4yNTIpIj4NCiAgICA8bGluZSBpZD0i0JvQuNC90LjRj182IiBkYXRhLW5hbWU9ItCb0LjQvdC40Y8gNiIgeTE9IjguNjY3IiB4Mj0iNi43NTYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zODcuODcyIDUxMS4wNDYpIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjBiMWQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUxIi8+DQogICAgPGxpbmUgaWQ9ItCb0LjQvdC40Y9fNyIgZGF0YS1uYW1lPSLQm9C40L3QuNGPIDciIHgxPSI2Ljc1NiIgeTE9IjguNjY3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzg3Ljg3MiA1MDIuMzEyKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjYwYjFkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41MSIvPg0KICA8L2c+DQo8L3N2Zz4NCg==');
 	}
 }
+.swiper-pagination-bullets {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 31px;
+}
+.swiper-pagination-bullet {
+	flex: 0 0 10px;
+	height: 10px;
+	background: #660B1D;
+	border-radius: 50%;
+	opacity: 0.6;
+	cursor: pointer;
+	margin-right: 20px;
+	&:last-child {
+		 margin:0px 0px 0px 0px;
+	}
+}
+.swiper-pagination-bullet-active {
+	flex: 0 0 15px;
+	height: 15px;
+	background: #660B1D;
+	opacity: 1;
+}
 //====================================================================================================
 
 // Табы
