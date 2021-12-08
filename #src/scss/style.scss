@@ -163,6 +163,7 @@ h5 {
 	align-items: flex-end;
 	height: 495px;
 	padding: 70px 93px;
+	background: grey;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -200,34 +201,16 @@ h5 {
 		flex: 0 1 31.73%;
 		height: 238px;
 		padding: 25px 52px;
+		background: grey;
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		background-size: cover;
 		border-radius: 25px;
 		overflow: hidden;
 		margin-bottom: 34px;
-		&:nth-child(1) {
-			background-image: url('../img/range/01.jpg');
-		}
-		&:nth-child(2) {
-			background-image: url('../img/range/02.jpg');
-		}
-		&:nth-child(3) {
-			background-image: url('../img/range/03.jpg');
-		}
-		&:nth-child(4) {
-			flex: 0 1 49%;
-			height: 300px;
-			background-image: url('../img/range/04.jpg');
-		}
-		&:nth-child(5) {
-			flex: 0 1 49%;
-			height: 300px;
-			background-image: url('../img/range/05.jpg');
-		}
 	}
 	&__card-nuar_blk {
-		 background-color: #00000055;
+		 background-color: #00000045;
 	}
 	// .ranges__card-title
 	&__card-title {
@@ -240,12 +223,30 @@ h5 {
 		color: #fff;
 	}
 }
-
-.ranges__card:nth-child(4) .ranges__card-title {
+.ranges__card_01 {
+	background-image: url('../img/range/01.jpg');
+}
+.ranges__card_02 {
+	background-image: url('../img/range/02.jpg');
+}
+.ranges__card_03 {
+	background-image: url('../img/range/03.jpg');
+}
+.ranges__card_04 {
+	flex: 0 1 49%;
+	height: 300px;
+	background-image: url('../img/range/04.jpg');
+}
+.ranges__card_05 {
+	flex: 0 1 49%;
+	height: 300px;
+	background-image: url('../img/range/05.jpg');
+}
+.ranges__card_04 .ranges__card-title {
 	color: #000;
 	margin-left: auto;
 }
-.ranges__card:nth-child(5) .ranges__card-title {
+.ranges__card_05 .ranges__card-title {
 	margin-right: auto;
 }
 //===================================================================================================================================
@@ -350,10 +351,11 @@ h5 {
 	&__block {
 		padding: 42px 160px 50px 162px;
 		color: #fff;
-		background-image: url('../img/form.jpg');
+		background: grey;
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		background-size: cover;
+		background-image: url('../img/form.jpg');
 		border-radius: 30px;
 		overflow: hidden;
 	}
@@ -374,7 +376,7 @@ h5 {
 	&__block-form-input {
 		display: inline;
 		max-width: 401px;
-		margin-right: 28px;
+		margin-right: 20px;
 		&:last-child {
 			 margin:0px 0px 0px 0px;
 		}
@@ -392,6 +394,9 @@ h5 {
 
 .applic__block-form .form__line {
    margin-bottom: 44px;
+}
+.applic__block-form-btn {
+	padding: 6px 42px;
 }
 //===================================================================================================================================
 
@@ -467,6 +472,11 @@ h5 {
     font-size: 16px;
     color: #fff;
     background: #AF0018;
+	 background:linear-gradient(-80deg, transparent 6px, #AF0018 0);
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-image: url('../img/sticker-bg.jpg');
 	}
 }
 
