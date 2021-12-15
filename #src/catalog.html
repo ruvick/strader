@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+	"title":"Каталог"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+
+			<section class="header-sec">
+				<div class="_container">
+					<p id="breadcrumbs">
+						<span>
+							<span>
+								<a href="index.html">
+									Главная
+								</a> /
+								<a href="index.html">
+									Каталог
+								</a> /
+								<span class="breadcrumb_last" aria-current="page">
+									Струны в наборах для скрипки
+								</span>
+							</span>
+						</span>
+					</p>
+					<h1 class="header-sec__title">Струны в наборах для скрипки</h1>
+				</div>
+			</section>
+
+			<section class="catalog-sec">
+				<div class="_container">
+
+					<div class="catalog-sec__inner">
+						
+						<div class="catalog-sec__sidebar">
+							<h6 class="catalog-sec__sidebar-title">Фильтр по параметрам</h6>
+						</div>
+
+						<div class="catalog-sec__main">
+							<div class="catalog-sec__sorting">
+								<div class="catalog-sec__sorting-name">Сортировать по:</div>
+								<form action="#" class="catalog-sec__sorting-select-form form">
+									<div class="catalog-sec__sorting-select-form-line form__line">
+										<select name="form[]" class="catalog-sec__sorting-select-form-sel">
+											<option value="1" selected="selected">Пункт №1</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+											<option value="2">Пункт №5</option>
+											<option value="3">Пункт №6</option>
+										</select>
+										<select name="form[]" class="catalog-sec__sorting-select-form-sel">
+											<option value="1" selected="selected">Пункт №1</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+											<option value="2">Пункт №5</option>
+											<option value="3">Пункт №6</option>
+										</select>
+										<select name="form[]" class="catalog-sec__sorting-select-form-sel">
+											<option value="1" selected="selected">Пункт №1</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+											<option value="2">Пункт №5</option>
+											<option value="3">Пункт №6</option>
+										</select>
+									</div>
+								</form>
+							</div>
+
+							<div class="catalog-sec__main-wrap">
+								@@include('_catalog-card-block.html',{})
+							</div>
+
+						</div>
+
+					</div>
+
+					<nav class="pagination catalog-sec__pagination d-flex">
+						<div class="pagination__nav-links d-flex">
+							<a class="pagination__back" href="#"></a>
+							<span class="pagination__numbers">1</span>
+							<a class="pagination__numbers current" href="#">2</a>
+							<a class="pagination__numbers" href="#">3</a>
+							<a class="pagination__numbers" href="#">4</a>
+<!-- 							<div class="pagination__block-dot d-flex">
+								<span class="pagination__dot">.</span>
+								<span class="pagination__dot">.</span>
+								<span class="pagination__dot">.</span>
+							</div> -->
+							<a class="pagination__numbers" href="#">5</a>
+							<a class="pagination__next" href="#"></a>
+						</div>
+					</nav>
+
+				</div>
+			</section>
+
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

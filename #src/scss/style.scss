@@ -653,9 +653,9 @@ h5 {
 .card-pr {
 	border: none;
 }
-.card-pr:hover {
-	border: 0.5px solid #d2d1d1;
-}
+// .card-pr:hover {
+// 	border: 0.5px solid #d2d1d1;
+// }
 .card-pr__title {
 	flex: 0;
 	margin-bottom: 13.5px;
@@ -730,7 +730,69 @@ h5 {
 		flex: 0 0 25%;
 	}
 }
+//===================================================================================================================================
 
+.catalog-sec {
+	padding-bottom: 46px;
+	// .catalog-sec__inner
+	&__inner {
+		display: flex;
+		padding: 20px 0 33px 0;
+		border-bottom: 0.5px solid #d2d1d1;
+	}
+	// .catalog-sec__sidebar
+	&__sidebar {
+		flex: 0 1 18.2%;
+		margin-right: 45px;
+		border: 1px solid #000;
+	}
+	// .catalog-sec__main
+	&__main {
+		flex: 0 1 80%;
+	}
+	// .catalog-sec__main-wrap
+	&__main-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -5px;
+	}
+}
+
+.catalog-card-column {
+	display: flex;
+  flex: 0 1 25%;
+  padding: 0 3px;
+  margin-bottom: 10px;
+}
+
+.catalog-sec {
+	// .catalog-sec__main
+	&__main {}
+	// .catalog-sec__sorting
+	&__sorting {
+		display: flex;
+		margin-bottom: 36px;
+	}
+	// .catalog-sec__sorting-name
+	&__sorting-name {
+		margin-right: 30px;
+	}
+	// .catalog-sec__sorting-select-form
+	&__sorting-select-form {}
+	// .catalog-sec__sorting-select-form-line
+	&__sorting-select-form-line {}
+	// .catalog-sec__sorting-select-form-sel
+	&__sorting-select-form-sel {}
+}
+
+.catalog-sec__pagination {
+	margin-top: 41px;
+}
+
+.catalog-sec__sidebar-title {
+	font-weight: 700;
+	margin-bottom: 25px;
+}
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
