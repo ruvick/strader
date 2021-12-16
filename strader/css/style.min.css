@@ -222,6 +222,7 @@ h5 {
 .search__input {
   font-size: 12px;
   font-weight: 300;
+  color: #161615;
   padding-left: 22px;
   border-radius: 20px !important;
   background: #ccc !important;
@@ -369,21 +370,21 @@ textarea.input {
 }
 
 ::-webkit-input-placeholder {
-  color: #8584847a;
+  color: #161615;
 }
 
 ::-moz-placeholder {
-  color: #8584847a;
+  color: #161615;
 }
 
 /* Firefox 19+ */
 :-moz-placeholder {
-  color: #8584847a;
+  color: #161615;
 }
 
 /* Firefox 18- */
 :-ms-input-placeholder {
-  color: #8584847a;
+  color: #161615;
 }
 
 .checkbox {
