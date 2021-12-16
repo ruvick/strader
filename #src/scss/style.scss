@@ -778,11 +778,56 @@ h5 {
 		margin-right: 30px;
 	}
 	// .catalog-sec__sorting-select-form
-	&__sorting-select-form {}
+	&__sorting-select-form {
+		display: flex;
+	}
 	// .catalog-sec__sorting-select-form-line
-	&__sorting-select-form-line {}
+	&__sorting-select-form-line {
+		margin-right: 23px;
+		&:last-child {
+			 margin:0px 0px 0px 0px;
+		}
+	}
 	// .catalog-sec__sorting-select-form-sel
 	&__sorting-select-form-sel {}
+}
+
+.catalog-sec__sorting-select-form .select__item {
+    // width: 125px;
+}
+.catalog-sec__sorting-select-form .select__title {
+    color: #161615;
+    border: none;
+    border-radius: 0;
+}
+.catalog-sec__sorting-select-form .select__value {
+    font-size: 16px;
+    height: auto;
+    padding: 0px; 
+    &:before {
+    	width: 10px;
+    	height: 5px;
+    	transform: rotate(-180deg);
+    	background: url(../img/icons/arrow-top.svg) center/100% no-repeat;
+    	margin-top: 5px;
+    	margin-left: 6px;
+   }
+}
+.catalog-sec__sorting-select-form .select._active .select__value:before {
+    transform: rotate(0deg);
+}
+.catalog-sec__sorting-select-form .select__options {
+    color: #161615;
+    top: 29px;
+    border: 0;
+    border-top: 0;
+    font-size: 16px;
+    padding: 0px;
+}
+.catalog-sec__sorting-select-form .select__option {
+		text-align: center;
+    padding: 5px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .catalog-sec__pagination {
@@ -843,6 +888,18 @@ h5 {
 .catalog-sec__sidebar-spollers-options .options__text:before,
 .catalog-sec__sidebar-spollers-options .options__text:after {
 	display: none;
+}
+
+.catalog-sec__sidebar-price {
+	display: flex;
+}
+.catalog-sec__sidebar-price-input input {
+	font-size: 14px;
+	color: #161615;
+	height: 35px;
+	padding: 0 10px;
+	border: 0.5px solid #d2d1d1;
+	border-radius: 0;
 }
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
