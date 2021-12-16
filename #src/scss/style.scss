@@ -447,6 +447,7 @@ h5 {
 	&__img {
 		padding: 0 15px;
 		height: 207px;
+		height: auto;
 		margin-bottom: 34px;
 		overflow: hidden;
 	}
@@ -751,7 +752,8 @@ h5 {
 	}
 	// .catalog-sec__sidebar
 	&__sidebar {
-		flex: 0 1 16.2%;
+		// flex: 0 1 16.2%;
+		flex: 0 0 233px;
 		margin-right: 45px;
 	}
 	// .catalog-sec__main
@@ -779,6 +781,7 @@ h5 {
 	// .catalog-sec__sorting
 	&__sorting {
 		display: flex;
+		flex-wrap: wrap;
 		margin-bottom: 36px;
 	}
 	// .catalog-sec__sorting-name
@@ -788,6 +791,7 @@ h5 {
 	// .catalog-sec__sorting-select-form
 	&__sorting-select-form {
 		display: flex;
+		flex-wrap: wrap;
 	}
 	// .catalog-sec__sorting-select-form-line
 	&__sorting-select-form-line {
