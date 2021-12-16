@@ -614,10 +614,12 @@ h5 {
 	// .product-sec__info-bottom
 	&__info-bottom {
 		padding: 50px 0 15px 0;
+		flex-wrap: wrap;
 	}
 	// .product-sec__info-form
 	&__info-form {
 		margin-right: 18px;
+		margin-bottom: 10px;
 	}
 	// .product-sec__info-btn-bascet
 	&__info-btn-bascet {
@@ -625,11 +627,13 @@ h5 {
 		background: #AF0018;
 		border: none;
 		margin-right: 18px;
+		margin-bottom: 10px;
 	}
 	// .product-sec__info-btn-pay-click
 	&__info-btn-pay-click {
 		color: #AF0018;
 		border: 1px solid #AF0018;
+		margin-bottom: 10px;
 	}
 }
 
@@ -711,6 +715,10 @@ h5 {
 	// .product-sec__descp-table-list
 	&__descp-table-list {
 		flex: 0 1 50%;
+		margin-right: 15px;
+		&:last-child {
+			 margin:0px 0px 0px 0px;
+		}
 	}
 	&__descp-table-list-item {
 		line-height: 24px;
